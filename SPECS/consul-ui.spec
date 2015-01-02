@@ -9,6 +9,8 @@ URL:            http://www.consul.io
 Source0:        https://dl.bintray.com/mitchellh/consul/%{version}_web_ui.zip
 BuildRoot:      %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
+Requires:       consul >= 0.4.1
+
 %description
 Consul-UI is the web interface for consul, a tool for service discovery and configuration.
 
